@@ -1,32 +1,37 @@
 body {
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #2ff5c7 0%, #6861ed 50%, #cc47b8 100%);
+  background: linear-gradient(135deg, #060397 0%, #058a41 50%, #002a8da5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: flex;
   border: 1px solid #000000;
   border-radius: 30px;
-  padding: auto;
-  margin: auto;
+  padding: 2rem;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   font-family: 'Roboto', sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  max-width: 600px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .container h1 {
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
-  color: #000000;
+  color: #ffffff;
 }
 
 .links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -35,4 +40,24 @@ body {
 .links a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.links button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.links button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }

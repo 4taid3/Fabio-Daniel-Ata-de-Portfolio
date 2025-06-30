@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@heroui/image": "^2.2.14",
+    "react-icons": "^5.5.0"
+  }
+}
